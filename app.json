@@ -12,7 +12,7 @@
     "githubUrl": "https://github.com/MrBrownser/la-nave",
     "orientation": "portrait",
     "splash": {
-      "image": "./assets/splash.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#000000"
     }
