@@ -1,29 +1,31 @@
 import React from 'react';
 import {
-  Button,
-  View,
-  Text,
+  SafeAreaView,
   StyleSheet,
 } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Constants from 'expo-constants';
+
 import DayList from './components/day-list';
 
 const Tab = createMaterialTopTabNavigator();
 
-const Attendance = ({ navigation }) => {
+const Attendance = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Tab.Navigator>
         <Tab.Screen name="Hoy" component={DayList} />
         <Tab.Screen name="Mañana" component={DayList} />
       </Tab.Navigator>
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    marginTop: Constants.statusBarHeight,
+    marginHorizontal: 16,
   },
 });
 
