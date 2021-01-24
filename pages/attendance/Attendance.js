@@ -1,24 +1,29 @@
 import React from 'react';
-import { Button,
-  View, StyleSheet, Text } from 'react-native';
+import {
+  Button,
+  View,
+  Text,
+  StyleSheet,
+} from 'react-native';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import DayList from './components/day-list';
+
+const Tab = createMaterialTopTabNavigator();
 
 const Attendance = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Attendance Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
+      <Tab.Navigator>
+        <Tab.Screen name="Hoy" component={DayList} />
+        <Tab.Screen name="Mañana" component={DayList} />
+      </Tab.Navigator>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    flex: 1
   },
 });
 
