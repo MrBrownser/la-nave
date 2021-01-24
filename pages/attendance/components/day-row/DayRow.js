@@ -15,6 +15,7 @@ const DayRow = ({ title, data }) => (
       <Ionicons name="person-circle" size={24} color="white" />
       <Text style={styles.assitantsText}>{`${data && data.length} asistentes`}</Text>
     </View>
+    <Ionicons name="chevron-forward" size={24} color="white" />
   </View>
 );
 
