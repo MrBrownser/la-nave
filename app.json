@@ -2,11 +2,19 @@
   "name": "la-nave",
   "displayName": "la-nave",
   "expo": {
-    "name": "la-nave",
-    "slug": "la-nave",
+    "name": "Entrenos la nave",
+    "slug": "entrenos-la-nave",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "",
+    "githubUrl": "https://github.com/MrBrownser/la-nave",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.jpg",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    }
   }
 }
