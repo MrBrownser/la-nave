@@ -1,0 +1,12 @@
+{
+  "name": "la-nave",
+  "displayName": "la-nave",
+  "expo": {
+    "name": "la-nave",
+    "slug": "la-nave",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
